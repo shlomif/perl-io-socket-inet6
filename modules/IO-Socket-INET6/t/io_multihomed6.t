@@ -52,7 +52,7 @@ use Socket (qw(
 # and PF_INET6 so selectively import things from Socket6.
 use Socket6 (
     qw(AI_PASSIVE getaddrinfo
-    sockaddr_in6 unpack_sockaddr_in6_all pack_sockaddr_in6_all in6addr_any
+    sockaddr_in6 unpack_sockaddr_in6 pack_sockaddr_in6_all in6addr_any
     inet_ntop
     )
 );
