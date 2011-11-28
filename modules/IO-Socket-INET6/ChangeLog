@@ -5,7 +5,7 @@
 	* IO-Socket is doing some imports so we now do use IO::Socket ().
 		- Fixed the rest of the imports.
 	* Thanks to LeoNerd
-	* New Release IO-Socket-INET6-2.7
+	* New Release IO-Socket-INET6-2.67
 
 2011-01-13 Shlomi Fish <shlomif@iglu.org.il>
 	* Made the use Socket call import constants selectively, and not rely
