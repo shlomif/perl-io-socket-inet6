@@ -32,7 +32,7 @@ my $build = Test::Run::Builder->new(
     {
         resources =>
         {
-            repository => "http://svn.berlios.de/svnroot/repos/web-cpan/IO-Socket-INET6/",
+            repository => "https://bitbucket.org/shlomif/perl-io-socket-inet6",
         },
         keywords =>
         [
