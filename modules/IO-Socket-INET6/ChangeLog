@@ -1,7 +1,9 @@
+2011-11-28 Shlomi Fish <shlomif@shlomifish.org>
 	* Fix the imports on t/io_multihomed6.t .
 		- Fixes https://rt.cpan.org/Ticket/Display.html?id=72769 again.
 	* Update the link to the repository in Build.PL.
-	
+	* New Release IO-Socket-INET6-2.69
+
 2011-11-28 Shlomi Fish <shlomif@shlomifish.org>
 	* Solved symbol clashes in t/io_multihomed6.t .
 		- Fixes https://rt.cpan.org/Ticket/Display.html?id=72769
