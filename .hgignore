@@ -1,0 +1,8 @@
+modules/IO-Socket-INET6/blib
+modules/IO-Socket-INET6/_build
+modules/IO-Socket-INET6/Build
+modules/IO-Socket-INET6/Makefile.PL
+modules/IO-Socket-INET6/META.json
+modules/IO-Socket-INET6/META.yml
+modules/IO-Socket-INET6/MYMETA.json
+modules/IO-Socket-INET6/MYMETA.yml
