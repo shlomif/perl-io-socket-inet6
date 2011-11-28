@@ -40,8 +40,22 @@ BEGIN {
 
 # check that localhost resolves to 127.0.0.1 and ::1
 # otherwise the test will not work
-use Socket;
-use Socket6;
+
+use Socket (qw(
+    AF_INET6 PF_INET6 SOCK_RAW SOCK_STREAM INADDR_ANY SOCK_DGRAM
+    AF_INET SO_REUSEADDR SO_REUSEPORT AF_UNSPEC SO_BROADCAST
+    sockaddr_in unpack_sockaddr_in
+    )
+);
+
+# IO::Socket and Socket already import stuff here - possibly AF_INET6
+# and PF_INET6 so selectively import things from Socket6.
+use Socket6 (
+    qw(AI_PASSIVE getaddrinfo
+    sockaddr_in6 unpack_sockaddr_in6_all pack_sockaddr_in6_all in6addr_any
+    inet_ntop
+    )
+);
 
 {
     my %resolved_addresses;
@@ -70,7 +84,9 @@ use Socket6;
     }
 }
 
-use IO::Socket::INET6;
+# IO::Socket has an import method that is inherited by IO::Socket::INET6 ,
+# and so we should instruct it not to import anything.
+use IO::Socket::INET6 ();
 
 $| = 1;
 print "1..8\n";

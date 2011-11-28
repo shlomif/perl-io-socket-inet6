@@ -1,3 +1,6 @@
+	* Solved symbol clashes in t/io_multihomed6.t .
+		- Fixes https://rt.cpan.org/Ticket/Display.html?id=72769
+
 2011-01-21 Shlomi Fish <shlomif@iglu.org.il>
 	* IO-Socket is doing some imports so we now do use IO::Socket ().
 		- Fixed the rest of the imports.
