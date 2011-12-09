@@ -1,3 +1,6 @@
+	* Fix a typo:
+		- https://rt.cpan.org/Ticket/Display.html?id=73143
+
 2011-11-28 Shlomi Fish <shlomif@shlomifish.org>
 	* Fix the imports on t/io_multihomed6.t .
 		- Fixes https://rt.cpan.org/Ticket/Display.html?id=72769 again.
