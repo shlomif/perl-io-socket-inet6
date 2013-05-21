@@ -6,3 +6,6 @@ modules/IO-Socket-INET6/META.json
 modules/IO-Socket-INET6/META.yml
 modules/IO-Socket-INET6/MYMETA.json
 modules/IO-Socket-INET6/MYMETA.yml
+
+syntax: regexp
+^modules/IO-Socket-INET6/IO-Socket-INET6-\d+\.\d+(?:/|\.tar\.gz$)
