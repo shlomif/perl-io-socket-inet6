@@ -1,6 +1,8 @@
+2013-05-21 Shlomi Fish <shlomif@shlomifish.org>
 	* Fix a typo:
 		- https://rt.cpan.org/Ticket/Display.html?id=73143
 	* Add t/style-trailing-space.t and got rid of trailing space.
+	* New Release IO-Socket-INET6-2.70
 
 2011-11-28 Shlomi Fish <shlomif@shlomifish.org>
 	* Fix the imports on t/io_multihomed6.t .

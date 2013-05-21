@@ -41,7 +41,7 @@ use Carp;
 use Errno;
 
 @ISA = qw(IO::Socket);
-$VERSION = "2.69";
+$VERSION = "2.70";
 #Purpose: allow protocol independent protocol and original interface.
 
 my $EINVAL = exists(&Errno::EINVAL) ? Errno::EINVAL() : 1;
