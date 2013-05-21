@@ -58,7 +58,7 @@ if(my $pid = fork()) {
 
     # TEST
     ok ($sockhost, "Checking for sockhost() success");
-    
+
     # TEST
     ok ($sock->peerhost(), "Checking for peerhost() success");
 

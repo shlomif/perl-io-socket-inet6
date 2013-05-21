@@ -66,7 +66,7 @@ print "1..7\n";
 
 # Make sure we don't import any extraneous symbols
 # which may clash and emit warnings.
-# 
+#
 # See:
 # http://qa.mandriva.com/show_bug.cgi?id=36889
 use Socket ();

@@ -7,7 +7,9 @@ use Test::Run::Builder;
 
 my $build = Test::Run::Builder->new(
     'module_name' => "IO::Socket::INET6",
-    'requires' => 
+    dist_version_from   => 'lib/IO/Socket/INET6.pm',
+    dist_abstract => 'Object interface for AF_INET/AF_INET6 domain sockets',
+    'requires' =>
     {
         'Carp' => 0,
         'Errno' => 0,
@@ -47,6 +49,6 @@ my $build = Test::Run::Builder->new(
             "sockets",
         ],
     },
-    
 );
+
 $build->create_build_script;

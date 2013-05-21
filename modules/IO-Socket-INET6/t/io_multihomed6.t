@@ -70,7 +70,7 @@ use Socket6 (
     while (@r) {
         my @values = splice(@r,0,5);
         my ($fam,$addr) = @values[0,3];
-        $addr = 
+        $addr =
         (
               ($fam == AF_INET)
             ? ( (unpack_sockaddr_in($addr))[1]  )
@@ -122,7 +122,7 @@ if (my $pid = fork()) {
 
     # listener should not work for next connect
     # so it needs to try second
-    close($first); 
+    close($first);
 
     # make sure established connection works
     my $fam0 = ( $cl->sockdomain == AF_INET ) ? 'inet':'inet6';

@@ -183,7 +183,7 @@ if($pid = fork()) {
 # Test the numeric address directly because "localhost" usually maps
 # to an IPv4 address.
 
-my $server = IO::Socket->new( 
+my $server = IO::Socket->new(
 			Domain => AF_INET6,
 			 Proto  => 'udp',
                           LocalAddr => '::1');
@@ -332,7 +332,7 @@ if( $server_pid) {
     print "ok 20\n";
 
 } elsif( defined( $server_pid)) {
-   
+
     ### Child
     #
     SERVER_LOOP: while (1) {

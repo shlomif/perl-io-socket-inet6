@@ -15,4 +15,5 @@ t/io_udp6.t
 t/listen_port_only.t
 t/pod-coverage.t
 t/pod.t
+t/style-trailing-space.t
 META.json
