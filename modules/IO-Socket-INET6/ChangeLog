@@ -1,3 +1,8 @@
+2013-06-23 Shlomi Fish <shlomif@shlomifish.org>
+	* Correct typos.
+		- https://rt.cpan.org/Public/Bug/Display.html?id=86344
+	* New Release IO-Socket-INET6-2.71
+
 2013-05-21 Shlomi Fish <shlomif@shlomifish.org>
 	* Fix a typo:
 		- https://rt.cpan.org/Ticket/Display.html?id=73143

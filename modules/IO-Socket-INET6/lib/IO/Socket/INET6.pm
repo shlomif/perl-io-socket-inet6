@@ -60,8 +60,8 @@ sub new {
     return $class->SUPER::new(@_);
 }
 
-#Parsing analisis:
-# addr,port,and proto may be sintactically related...
+# Parsing analysis:
+# addr,port,and proto may be syntactically related...
 sub _sock_info {
   my($addr,$port,$proto) = @_;
   my $origport = $port;
@@ -192,7 +192,7 @@ sub configure {
 
     my @flr;
     if (@rres) {
-        # collect all combinations whith the same family in lres and rres
+        # Collect all combinations with the same family in lres and rres
         # the order we search should be defined by the order of @rres,
         # not @lres!
         for( my $r=0;$r<@rres;$r+=5 ) {
@@ -478,11 +478,11 @@ The C<PeerPort> can be a number or a symbolic
 service name.  The service name might be followed by a number in
 parenthesis which is used if the service is not known by the system.
 The C<PeerPort> specification can also be embedded in the C<PeerAddr>
-by preceding it with a ":", and closing the IPv6 address on bracktes "[]" if
+by preceding it with a ":", and closing the IPv6 address on brackets "[]" if
 necessary: "124.678.12.34:23","[2a05:345f::10]:23","any.server.com:23".
 
 If C<Domain> is not given, AF_UNSPEC is assumed, that is, both AF_INET and AF_INET6 will
-be both considered when resolving DNS names. AF_INET6 is prioritary.
+be both considered when resolving DNS names. AF_INET6 has priority.
 If you guess you are in trouble not reaching the peer,(the service is not available via
 AF_INET6 but AF_INET) you can either try Multihomed (try any address/family until reach)
 or concrete your address C<family> (AF_INET, AF_INET6).
