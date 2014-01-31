@@ -12,6 +12,8 @@ package IO::Socket::INET6;
 use strict;
 use warnings;
 
+use 5.008;
+
 our(@ISA, $VERSION);
 
 # Do it so we won't import any symbols from IO::Socket which it does export

@@ -17,6 +17,7 @@ my $build = Test::Run::Builder->new(
         'IO::Socket' => 0,
         'Socket' => 0,
         'Socket6' => "0.12",
+        'perl' => '5.008',
         'strict' => 0,
         'warnings' => 0,
     },
