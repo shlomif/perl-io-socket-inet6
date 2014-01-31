@@ -1,5 +1,6 @@
 2013-06-23 Shlomi Fish <shlomif@shlomifish.org>
 	* Add minimum version of perl to 5.8.x (CPANTS Kwalitee).
+	* Add LICENSE file. (CPANTS).
 	* New Release IO-Socket-INET6-2.72
 
 2013-06-23 Shlomi Fish <shlomif@shlomifish.org>
